@@ -17,3 +17,6 @@ Fazer o commit
 
 Direto sem o add
 # git commit -am "Atualiza o Readme"
+
+Para ver as mudanças
+# git diff
