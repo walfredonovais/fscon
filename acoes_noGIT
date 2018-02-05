@@ -1,0 +1,15 @@
+Ações do GIT
+
+# git status
+
+Para adicionar:
+
+# git add -A
+
+para ver os commits:
+
+# git log
+
+Para Sincronizar (entre aspas a descrição das alterações):
+
+# git commit -m "Commit inicial"
