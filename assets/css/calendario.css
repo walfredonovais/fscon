@@ -1,0 +1,91 @@
+/* CSS Document */ 
+
+/* fonte título */ 
+.calendario_tabela{ font-family: 'Roboto', sans-serif; font-weight:300; font-size:1em;
+    border:1px solid #FFF; 
+    background:#F5F5F5;
+	padding:10px;
+	
+} 
+.calendario_dias{ 
+    background:#FFFFFF; 
+    padding:4px; 
+	
+} 
+.calendario_dias_hoje{ 
+    background: rgb(196,222,222);
+    padding:2px; 
+} 
+/* Barra dias da semmana */
+.calendario_semana{ 
+    background:#B9B9B9; 
+    color:#FFFFFF; 
+    text-align:center; 
+    font-weight: 400;
+	font-size:0.8em;   
+} 
+.calendario_hoje{ color:rgb(255,0,0); 
+    font-weight:300;
+	font-size:0.8em;
+} 
+/* MES E ANO */
+.calendario_mes_ano{ 
+    text-align:center; 
+    font-weight: 400;
+	font-size:0.8em;
+    color: rgb(0,153,153);
+	
+	
+} 
+
+.calendario_odia{ 
+    text-align:center; 
+    font-weight: 400;
+	font-size:0.8em;
+    color: rgb(0,153,153);
+	background-color: rgb(229,229,229);
+} 
+.calendario_links{ 
+    color: rgb(0,153,153);
+    display:block; 
+    text-decoration:none; 
+} 
+.calendario_links:hover{ 
+    text-decoration:none; 
+    background:#B9B9B9; 
+    color:#FFFFFF; 
+} 
+.calendario_links_hoje{ 
+    color:#B9B9B9; 
+    display:block; 
+    text-decoration:none; 
+} 
+.calendario_links_hoje:hover{ 
+    text-decoration:none; 
+    background:#B9B9B9; 
+    color:#FFFFFF; 
+} 
+/* Dias */
+a:link { 
+  font-size:       0.9em; 
+  text-decoration: none; 
+  color:           #000000; 
+} 
+a:visited { 
+ 
+  font-size:       0.9em; 
+  text-decoration: none; 
+  color:           #000000; 
+} 
+a:hover { 
+ 
+  font-size:       0.9em; 
+  text-decoration: none; 
+  color: rgb(0,102,153); 
+} 
+a:active { 
+ 
+  font-size:       0.9em; 
+  text-decoration: none; 
+  color: rgb(0,153,153);
+}

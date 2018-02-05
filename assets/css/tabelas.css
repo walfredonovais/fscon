@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* CSS Document */
+
+h1{font-size:1.6em; font-family: 'Roboto', sans-serif; letter-spacing:0.04em; }
+
+a img{ border:none; }
+
+table{ width:98%; border:1px solid #ccc; margin: 5px auto 10px auto; background-color:rgb(255,255,255);}
+
+table thead th{ background-color:#91aa9d; color:#fff; text-align:left; font-size:1em;  padding:5px 0px 5px 5px;  }
+
+table thead th.header{ cursor:pointer; }
+
+table tbody td{ text-align:left; color:#333; padding:6px 0px 6px 5px; font-size: 1em; font-weight:300; }
+table tbody td a{ text-align:left; color:#333; padding:6px 0px 6px 5px; font-size: 1.1em; color: rgb(3,102,166); font-weight:400; text-decoration:none; }
+
+table tbody tr:nth-child(odd){ background-color: #ffffff;  font-size: 0.8em; line-height: 1.4em; }
+table tbody tr:nth-child(even){ font-size: 0.8em; line-height: 1.4em; background-color:#F9F9F9; }
+

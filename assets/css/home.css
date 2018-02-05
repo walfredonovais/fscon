@@ -1,0 +1,301 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body { font-family: 'Roboto', sans-serif; font-size:0.8em; font-weight:300; line-height: 1.5em; color:rgb(88,90,0); background-color:#E2E2E2;}
+/* Manten o padding dentro do limite definido pelo box */
+*, *:before, *:after {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/* garantir que as imagens não vão se distorcer, ficam com largura máxima de 100% do tamanho original. */
+img, picture, video, embed { max-width: 100%; }
+
+/* Estrutura Global */
+#global { width: 1148px; margin: 10px auto 20px auto; padding: 10px; background: #FFF; border-top-right-radius: 20px; }
+#header {width: 1128px; height: 110px; position: relative; background-color: #B9B9B9; border-top-right-radius: 15px; overflow: hidden; }
+#logo {position: absolute; height: 90px; padding: 10px 0 0 13px; visibility: visible;}
+#slogan {width: 280px; height:90px; line-height: 30px; position: absolute; right: 15px; top:18px; visibility: visible; text-align: right;}
+#page {width:1128px; height:auto; background-color:rgb(249,249,249); padding-bottom:1px; padding-top:0px;}
+
+#container{width:1128px; height:auto; }
+.container2B { width: 1128px; margin: 0 auto; height:650px; background-color:#dee6e2; background-image: url("../images/estrutura/bg_rel2.png"); }
+
+.boxarea{margin:auto; width:380px; height: auto; margin-top:120px; position: relative; border-radius:5px; box-shadow:0px 0px 10px #999; border:1px solid #CCC; padding:15px; background-color: #F9F9F9;}
+.textobox { font-size:1.8em; color: rgb(102,102,102); text-align:center;  margin-right:5px; margin-top:10px;}
+
+
+
+/* Estrutura OBRA_REL */
+#conteudo{width:1128px; height:auto; background-color:#dee6e2; margin-top:-5px;}
+#conteudo2{width:1128px; height:auto; background-color:#dee6e2;}
+
+.clear { clear: both; }
+.centra{ text-align:center;}
+
+/* Estrutura do Roda pé */
+#footer {width: 1128px; height:35px; border-top: rgb(255,255,255) solid 2px; font-size: 1em; background-color:rgb(249,249,249);  text-align: center; padding-top:8px; border-bottom-left-radius:15px; border-bottom-right-radius: 15px; font-weight:300; }
+#footer a {font-weight:400;  text-decoration: none; color: rgb(86,136,170); letter-spacing:0.06em; }
+
+/* form */
+.loginarea{margin:auto; width:380px;  margin-top:50px; margin-bottom:50px; position: relative; border-radius:5px; box-shadow:0px 0px 10px #999; border:1px solid #CCC; padding:15px;}
+.loginarea input[type=text], [type=password], [type=email], [type=usuario]{width:340px; height:40px; outline:0; font-size:14px; padding-left:10px; padding-right:10px; margin-top:5px; margin-bottom:20px; border-radius:5px; border:1px solid #CCC; }
+.loginarea textarea{width:340px; height: auto; outline:0; font-size:14px; padding:10px 10px 0 10px; margin-top:5px; margin-bottom:20px; border-radius:5px; border:1px solid #CCC; }
+.loginarea input[type=submit]{width:100px; height:30px; border:0px; font-size:14px; border-radius:5px; background-color:#DDD; border:1px solid #CCC; }
+.loginarea label{ display:block; float: left; font-family: 'Fira Sans', sans-serif; font-size:1.2em; font-weight:500; margin-left:10px; color: rgb(0,153,204); }
+
+.warning{ font-size:1em; font-weight:400; color: rgb(255,0,0); text-align:center;}
+.alerta{ font-size:1em; font-weight:300; text-align:center;}
+
+.link01 { color:#369; letter-spacing:0.08em; text-decoration:none; text-align:center; }
+
+/* Tres coluna */
+#esquerda {float:left; width: 250px;  margin-right:10px;}
+#central { float:left; width:608px; background-color:rgb(255,255,255); margin-top:-2px; display:inline; min-height:660px; }
+#central2 { float:left; width:608px;  margin-top:-2px; display:inline; } /* sem bacground */ 
+#direita { float: right; width: 250px; margin-left: 5px; }
+
+/* Caixas de conteúdo das colunas laterais */
+#box01 { width:250px; padding-left:5px; margin-bottom:5px;}
+#box02 { width:250px; padding-left:5px; margin-bottom:5px; margin-top:10px;}
+#box03 { width:250px; padding-left:5px; margin-bottom:5px; } /* acrescenta espaço top */
+#box03B { width:250px; padding-left:5px; margin-bottom:10px; } /* acrescenta espaço top */
+#box03C { width:250px; padding-left:5px; margin-bottom:10px; text-align:center; } /* acrescenta espaço top e centra */
+#box04 { width:250px; padding-right:15px; margin-top:-8px; text-align:center; } /* espaço top negativo reduz padding left */
+#box05 { padding: 1px; margin-bottom:5px; background-color:rgb(249,249,249);} /* mesma cor do page */
+
+/* Caixas de conteúdo das coluna central */
+#box06 { width:608px; padding-left:8px; padding-right:8px; margin-bottom:5px; } /* legenda na foto home */
+#box08 { width:590px; padding-left:8px; margin: 30px auto 12px auto; padding-right:8px; border-top-left-radius:8px; 
+border-top-right-radius:8px; border: rgb(204,204,204) solid 1px;} /* Painel de noticias */
+#box09 { width:250px; padding-left:5px; margin-bottom:12px; margin-left:10px; background-color:rgb(255,255,255); margin-top:-13px;}
+#box07 { width:250px; padding-left:2px; margin-top:-8px; text-align:left; } /* coluna direita */
+
+#contact{ margin: 30px auto 30px auto; width:730px; height:480px;   position: relative; border-radius:5px; box-shadow:0px 0px 10px #999; padding:5px;
+border: rgb(204,204,204) solid 1px; background-color:rgb(255,255,255); text-align:left; }
+
+#contact_agd{ margin: 30px auto 30px auto; width:730px; height: auto; position: relative; border-radius:5px; box-shadow:0px 0px 10px #999; padding:5px;
+border: rgb(204,204,204) solid 1px; background-color:rgb(255,255,255); text-align:left; }
+
+
+#contact3{ margin: 20px auto 20px auto; width:730px; height:auto; border-radius:5px; box-shadow:0px 0px 10px #999; padding:5px;
+border: rgb(204,204,204) solid 1px; background-color:rgb(255,255,255); text-align:left; }
+
+#contact2{ margin: 20px auto 20px auto; width:730px; height:auto; position: relative; border-radius:5px;  padding:5px; text-align:left; }
+#foto { float:left; width:180px; height:220px; margin-top:10px; margin-right:10px; margin-left:10px; }
+#contactBox01 {float:left; padding-top:3px; width: 500px; height:380px; margin-top:10px; margin-left:5px;}
+#contactBox04 {float:left; padding-top:3px; width: 500px; height:auto; margin-top:10px; margin-left:5px;  }
+#contactBox04CT {float:left; padding-top:3px; width: 700px; height:auto; margin-top:10px; margin-left:15px;}
+#contactBox02 {float:left; padding-top:3px; width:140px; height:35px; margin-right:10px; text-align:right; padding-top:8px; }
+#contactBox03 {float:left; padding-top:3px; width:340px; height:35px; font-size:1.2em; font-weight:400; text-align:left; color:rgb(60,60,68); padding-top:8px; }
+#contactBox03 .[textarea]{float:left; padding-top:3px; width:340px; height:35px; font-size:1.2em; font-weight:400; text-align:left; color:rgb(60,60,68); padding-top:8px; }
+
+#contactBox02CT {float:left; padding-top:3px; width:145px; height:35px; text-align:right; padding-top:8px; }
+#contactBox03CT {float:right; padding-top:3px; width:540px; height:35px; font-size:1.2em; margin-top:-35px; font-weight:400; text-align:left; color:rgb(60,60,68); padding-top:8px; margin-left:150px; }
+#contactBox03CT2 {float:right; padding-top:3px; width:540px; height:75px; font-size:1.2em; margin-top:-35px; font-weight:400; text-align:left; color:rgb(60,60,68); padding-top:8px; margin-left:150px; }
+#contactBox03CT .[textarea]{float: right; padding-top:3px; width:540px; height:75px; font-size:1.2em; font-weight:400; text-align:left;  margin-left:150px; color:rgb(60,60,68); padding-top:8px; }
+
+#contactBox05 {float:left; padding-top:3px; width:140px; height:60px; margin-right:10px; text-align:right; padding-top:8px; }
+#contactBox06 {float:left; padding-top:3px; width:340px; height:60px; font-size:1.2em; font-weight:400; text-align:left; color:rgb(60,60,68); padding-top:8px; }
+.txcontact { text-align:right; padding-top:10px; }
+.subcontact{font-family: 'Fira Sans', sans-serif; font-size:1em; font-weight:400; text-align:left;}
+.subcontact a{font-family: 'Fira Sans', sans-serif; font-size:0.9em; font-weight:400;  padding-top:10px; text-decoration:none; color: rgb(82,159,181);}
+
+#contactBoxZZ {float:left; padding-top:3px; width: 500px; height:auto; margin-top:10px; margin-left:5px; background-color:rgb(204,204,204);}
+
+
+.notearea{margin:auto; width:580px;  margin-top:50px; margin-bottom:50px; background-color:rgb(255,255,255); position: relative; 
+border-radius:5px; box-shadow:0px 0px 10px #999; border:1px solid #CCC; padding:15px;}
+
+#espaco { padding: 1px; margin-bottom:5px;}
+#espaco2 { padding: 1px; margin-bottom:10px;}
+#espaco3 { padding: 1px; margin-bottom:1px;}
+
+#elfinder { width:250px; padding-left:5px; height:28px; text-align:left; background-color:rgb(255,255,255);} /* espaço top negativo reduz padding left */
+.form_elf { font-family: 'Fira Sans', sans-serif; font-size:1.2em; font-weight:400; padding-top:5px; padding-left:5px; color:rgb(123,173,42); border:none; 
+background-color:transparent; cursor:pointer;}
+
+#div-obras { float:left; width:250px; text-align:left; background-color:#F9F9F9; }
+
+/* Duas coluna */
+#left {float:left; width: 250px; background: rgb(0,153,153); margin-right:10px;}
+#right {float:right; width: 868px; background: rgb(0,255,102); margin-right:0px;}
+
+/* Duas coluna OBRA_REL */
+#esq {float:left; width: 330px; height:700px; background-color:#91aa9d; }
+#dir {float:right; width: 798px; height:700px; margin-right:0px; background-color:#dee6e2;}
+
+#esqB {float:left; width: 330px; height:690px; background-color:#91aa9d; }
+#dirB {float:right; width: 798px; height:690px; margin-right:0px; background-color:#dee6e2; }
+
+#esq2 {float:left; width: 330px; height:250px; background-color:#91aa9d; }
+#dir2 {float:right; width: 798px; height:250px; background-color:#dee6e2; margin-right:0px;}
+
+#comunica {width: 708px; height:210px; margin:10px 10px 10px 80px; padding:10px; border:rgb(103,157,131) solid 1px; border-top-right-radius:10px;
+-webkit-column-count:2; /* Chrome, Safari, Opera */
+-moz-column-count:2;    /* Firefox */
+column-count:2;         /* padrão */}
+
+#boxup {width: 310px; height:290px; margin-left:10px; text-align:center;}
+
+/* Duas coluna ADD e EDIT */
+#esq3 {float:left; width: 330px; height:auto;}
+#dir3 {float:right; width: 798px; height:auto; margin-right:0px;}
+/* Duas coluna ADD e EDIT */
+#esq_form {float:left; width: 250px; height:auto; padding:5px;}
+#dir_form {float:right; width: 868px; height:auto; padding:10px; margin-right:0px;}
+
+#boxinform { width:300px; padding-left:10px; text-align:left; line-height:1.6em; font-size:1.1em;  }
+
+
+
+.control-group{ font-size:1em; margin-top:10px;}
+
+/* Formulário coluna */
+#formcol{ margin:10px 0px 10px 0px; width:220px; padding:1px; }
+#formcol input{ float:left; font-size:1em; padding:4px 2px; border:solid 1px #B9B9B9;  width:220px; margin:2px 0 12px 0px;  background: #FFF; text-align:center; line-height:20px;
+color: #369; border-radius: 8px; text-shadow: 1 2px 2px rgba(0, 0, 0, 0.2);}
+
+/* Botão na home */
+#botao { background-color: #ccc; -webkit-border-radius: 2px; -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px; -webkit-user-select: none;
+   background-image: url("../images/estrutura/15xvbd5.png"), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+   background-position: 96% center; background-repeat: no-repeat; border: 1px solid #AAA; color: #555; font-size:0.9em;
+   overflow: hidden; padding: 2px 6px; text-overflow: ellipsis; white-space: nowrap; width: 230px; cursor:pointer; margin-top:-6px;
+  }
+
+#botao2 { background-color: #ccc; -webkit-border-radius: 4px; -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px; -webkit-user-select: none;
+   background-image: url("../images/estrutura/15xvbd5.png"), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+   background-position: 94% center; background-repeat: no-repeat; border: 1px solid #AAA; color: #555; font-size:0.9em;
+   overflow: hidden; padding: 2px 0px 2px 0px; text-overflow: ellipsis; white-space: nowrap; width: 120px; cursor:pointer; margin-top:-6px;
+  }
+
+
+#css_btn_class {
+	font-size:12px;
+
+	font-weight:normal;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	border:1px solid #dcdcdc;
+	padding:3px 18px;
+	text-decoration:none;
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	background:-ms-linear-gradient( top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #ededed), color-stop(100%, #dfdfdf) );
+	background-color:#ededed;
+	color:#777777;
+	display:inline-block;
+	text-shadow:1px 1px 0px #ffffff;
+ 	-webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+ 	-moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+ 	box-shadow:inset 1px 1px 0px 0px #ffffff;
+}
+#css_btn_class:hover {
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	background:-ms-linear-gradient( top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #dfdfdf), color-stop(100%, #ededed) );
+	background-color:#dfdfdf;
+}
+#css_btn_class:active {
+	position:relative;
+	top:1px;
+}
+/* This css button was generated by css-button-generator.com */
+</style>
+
+
+
+.SubBT { font-family: 'Fira Sans', sans-serif; font-size:1em; font-weight:500; }
+.SubBT a{ font-family: 'Fira Sans', sans-serif; font-size:1em; font-weight:500; color:rgb(0,102,204); text-decoration:none; }
+
+
+/* COMBOBOX na Home */
+#botao select { padding: 2px 8px; width: 220px;  color: #555; font-size:1em;
+	color: #555; border: none; height:18px; box-shadow: none; background: transparent; background-image: none; -webkit-appearance: none;
+  }
+
+/* PESQUISAR na home */
+.search { width:225px; position: relative; margin-left:5px; }
+
+.searchTerm { float: left; width: 205px; border: 1px solid rgb(153,153,153);
+  padding: 5px; height: 25px;
+  border-radius: 5px; outline: none; color: rgb(183,183,183);
+}
+.searchTerm:focus{ color: #16aabe; }
+.searchButton { position: absolute; right: -7px; width: 25px; height: 25px; border: 1px solid rgb(153,153,153);
+  background: #b5b8b3; text-align: center; color: #fff; border-radius: 5px; cursor: pointer; font-size: 2em; background-image: url("../images/estrutura/15xvbd52.png"), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5); background-position: 97% center; background-repeat: no-repeat; }
+/* Para seletor de arquivo */
+.search input[type=file]{ display: none }
+/* Aparência que terá o seletor de arquivo */
+.search:label { border-radius: 5px; color: #fff; cursor: pointer; margin:5px; padding: 6px 10px; text-align:left; }
+
+/* Icons */
+.icon { float:left; padding-top:3px; width: auto; height: auto; margin-right:3px; }
+.icon2 { float:left; padding-top:4px; width: auto; height: auto; margin-right:5px; }
+.icon3 { float:left; width: auto; height: auto; margin-top:-8px; margin-left:-3px;}
+.iconnote { float:left; padding-top:5px; width: auto; height: auto; margin-right:3px; }
+
+/* Definicão dos fontes */
+
+.Sub01 { font-family: 'Fira Sans', sans-serif; font-size:1.1em; font-weight:500; }
+.Sub01 a{ font-size:0.9em; color: rgb(0,102,51); text-decoration:none; }
+.Sub02 { font-family: 'Fira Sans', sans-serif; font-size:0.9em; font-weight:500; }
+.Sub02 a{ font-size:0.9em; color:rgb(0,102,204); text-decoration:none; }
+.Sub03 { font-family: 'Fira Sans', sans-serif; font-size:1.1em; font-weight:500; }
+.Sub03 a{ font-size:1em; color: rgb(133,133,133); text-decoration:none; } <!-- Link painel de noticias 
+.Sub04 { font-family: 'Fira Sans', sans-serif; font-size:1.1em; font-weight:500; }
+.Sub04 a{ font-size:1.1em; color: rgb(0,102,51); text-decoration:none; font-weight:500; }
+.Sub05 { font-family: 'Adamina', serif; font-size:1.1em; line-height:1.6em; }
+.Sub05 a{ font-size:1.2em; color: rgb(80,80,80); text-decoration:none; } <!-- Link painel de noticias 
+.Corpo {font-family: 'Adamina', serif; font-size:0.9em; line-height:1.4em; }
+.legenda {font-size:0.86em; line-height:1.4em; font-weight:300;}
+.Sub06 { font-family: 'Fira Sans', sans-serif; font-size:1.1em; font-weight:500; color:rgb(198,101,33);} /* Notificações */
+.txevento { font-family: 'Roboto', sans-serif; font-weight:400; font-size:1em;  }
+.txevento a{font-weight:400;  font-size:1em; color: rgb(3,102,166); margin-right:5px; text-decoration:none;  }
+.txeventoB { font-family: 'Roboto', sans-serif; font-weight:400; font-size:0.9em; margin-left:20px;}
+.txLegFoto{ font-family: 'Roboto', sans-serif; font-weight:300; font-size:0.9em; line-height:1.5em;  }
+.txLegAutor{ font-family: 'Roboto', sans-serif; font-weight:300; font-size:0.9em; line-height:1.5em; color:rgb(11,150,40);  }
+.txevento2 { font-family: 'Oswald', sans-serif; font-weight:500; font-size:0.9em;}
+.txevento2 a{ font-family: 'Oswald', sans-serif; font-weight:500; font-size:1em; text-decoration:none; color:rgb(51,102,153);}
+.txeventoView { font-family: 'Roboto', sans-serif; font-weight:400; font-size:1.1em;  }
+.cliente{ font-weight:500; color: rgb(0,102,51); text-decoration:none;}
+.obra{ font-size:0.96em; color: rgb(56,56,56); text-decoration:none; padding-left:12px; font-weight:400;}
+.note{font-size:1.2em; color: rgb(56,56,56); line-height:1.6em; }
+.notetitulo{ font-family: 'Adamina', serif; font-size:1.4em; line-height:1.6em;}
+.titulo{font-family: 'Fira Sans', sans-serif; font-size:2em; font-weight:500; line-height:1.6em;}
+.subtitulo{font-family: 'Fira Sans', sans-serif; font-size:1.8em; font-weight:400; line-height:1.2em;}
+.subtitulo2{font-family: 'Fira Sans', sans-serif; font-size:1.4em; font-weight:400; line-height:1.8em;}
+.subtitulo2 a{font-family: 'Fira Sans', sans-serif; font-size:1em; font-weight:400; line-height:1.8em; text-decoration:none; color: rgb(82,159,181);}
+
+.textarea[id=texta]{ float:left; font-size:1.1em; line-height:1.6em;  width:450px; margin:2px 0 20px 0px; }
+.color_green{ color: rgb(83,153,67);}
+
+/* Paginação geral  */
+#paginacao { margin: 1px 2px 0px 0px; display: inline-block; font-family: 'Fira Sans', sans-serif; font-size:0.9em; font-weight:300;}
+#paginacao a { padding: 2px 6px; text-decoration: none; color: #666; }
+#paginacao a:hover { background-color: #006699; color:#FFFFFF; padding: 2px 6px; text-decoration: none; }
+#paginacao .atual { color:#006699; font-size: 1em; }
+
+.comentario { font-family: 'Roboto', sans-serif; font-weight:400; font-size:1.1em;}
+.comenta { font-family: 'Roboto', sans-serif; font-weight:400; font-size:1em; margin-left:40px; color:rgb(81,138,153); }
+.comenta a{font-weight:400; font-size:1em; color: rgb(3,102,166); margin-right:5px; text-decoration:none; }
+
+
+select#soflow-color { 
+   -webkit-appearance: none; 
+   -moz-appearance: none;
+   appearance: none;       /* remove default arrow */
+   font-size:1em;
+   color: #fff;
+   background-image: url("../images/estrutura/15xvbd52.png"), -webkit-linear-gradient(#5a925b, #5a925b 40%, #5a925b); background-position: right;
+   background-color: #5a925b;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   padding-left: 15px; background-repeat: no-repeat; 
+   outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
