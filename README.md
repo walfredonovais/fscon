@@ -23,3 +23,6 @@ Para ver as mudanças
 
 # git diff --name-only
 
+voltar arquivo
+# git checkout HEAD -- nome do arquivo
+
