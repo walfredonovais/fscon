@@ -20,3 +20,5 @@ Direto sem o add
 
 Para ver as mudanças
 # git diff
+
+# git diff --name-only
